@@ -36,3 +36,19 @@ const updateCountdown = () => {
 
 const countdownInterval = setInterval(updateCountdown, 1000);
 updateCountdown();
+
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+document.querySelectorAll(".navbar .nav-link").forEach((link) => {
+  const linkPage = new URL(link.href, window.location.href).pathname
+    .split("/")
+    .pop() || "index.html";
+  const isActive = linkPage === currentPage;
+
+  link.classList.toggle("active", isActive);
+  if (isActive) {
+    link.setAttribute("aria-current", "page");
+  } else {
+    link.removeAttribute("aria-current");
+  }
+});
