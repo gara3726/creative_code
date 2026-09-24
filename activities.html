@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Creative Code 4.0 - Activities</title>
     <link rel="icon" href="aset/gambar/logo.png" />
+    <script src="https://unpkg.com/feather-icons"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,10 +15,10 @@
   </head>
   <body class="bg-light">
     <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand ms-lg-5" href="index.html">
           <img src="aset/gambar/logo.png" alt="Creative Code logo" width="32" height="32" class="d-inline-block align-text-top" />
-          <span class="fw-bold px-1">Creative Code <span class="navbar-text small">4.0</span></span>
+          <span class="fw-bold px-1">Creative Code <span class="navbar-text" style="font-size: small;">4.0</span></span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,8 +37,7 @@
 
     <main class="container py-5">
       <section class="mb-5">
-        <p class="small text-uppercase text-secondary fw-semibold mb-2">Programme</p>
-        <h1 class="display-4 fw-bold mb-3">Activities</h1>
+        <h1 class="display-3 fw-bold mb-3">Activities</h1>
         <p class="lead text-secondary mb-0 col-lg-7">Four thoughtful activities covering community, competition, learning, and celebration -- something for everyone.</p>
       </section>
 
@@ -159,33 +159,43 @@
       </div>
     </main>
 
-    <footer class="bg-dark text-white text-center text-lg-start pt-3 mt-5">
-      <div class="container text-center text-md-start py-5">
-        <div class="row g-4">
-          <div class="col-md-5 col-lg-4">
-            <h2 class="h6 text-uppercase fw-bold mb-4"><img src="aset/gambar/logo.png" alt="Logo" width="32" height="32" class="me-2" />Creative Code 4.0</h2>
-            <p class="mb-0">Sebuah kegiatan yang diadakan oleh tim Creative Code 4.0.</p>
-          </div>
-          <div class="col-md-3 col-lg-2">
-            <h2 class="h6 text-uppercase fw-bold mb-4">Useful links</h2>
-            <div class="d-flex flex-column gap-2">
-              <a href="index.html" class="text-decoration-none text-white">Home</a>
-              <a href="about.html" class="text-decoration-none text-white">About</a>
-              <a href="activities.html" class="text-decoration-none text-white">Activities</a>
-              <a href="journey.html" class="text-decoration-none text-white">Journey</a>
+    <footer class="text-center text-lg-start bg-dark text-white pt-3 mt-5">
+      <section>
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h2 class="h6 text-uppercase fw-bold mb-4">
+                <img src="aset/gambar/logo.png" alt="Logo" width="32" height="32" class="me-2" />Creative Code 4.0
+              </h2>
+              <p>Sebuah Kegiatan yang diadakan oleh tim Creative Code 4.0</p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h2 class="h6 text-uppercase fw-bold mb-4">Useful links</h2>
+              <p><a href="index.html" class="text-decoration-none text-white">Home</a></p>
+              <p><a href="about.html" class="text-decoration-none text-white">About</a></p>
+              <p><a href="activities.html" class="text-decoration-none text-white">Activity</a></p>
+              <p><a href="journey.html" class="text-decoration-none text-white">Journey</a></p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h2 class="h6 text-uppercase fw-bold mb-4">Contact</h2>
+              <p><i data-feather="map-pin"></i> New York, NY 10012, US</p>
+              <p><i data-feather="mail"></i> info@example.com</p>
+              <p><i data-feather="phone"></i> + 01 234 567 88</p>
+              <p><i data-feather="printer"></i> + 01 234 567 89</p>
             </div>
           </div>
-          <div class="col-md-4 col-lg-3">
-            <h2 class="h6 text-uppercase fw-bold mb-4">Contact</h2>
-            <p>New York, NY 10012, US</p>
-            <p>info@example.com</p>
-            <p class="mb-0">+ 01 234 567 88</p>
-          </div>
         </div>
+      </section>
+
+      <div class="container-fluid text-center p-4 bg-dark">
+        &copy; 2026 Copyright:
+        <a class="text-reset fw-bold" href="index.html">Creative Code 4.0</a>
       </div>
-      <div class="container-fluid text-center p-4 border-top border-secondary">&copy; 2026 Copyright: <a class="text-reset fw-bold" href="index.html">Creative Code 4.0</a></div>
     </footer>
 
+    <script>feather.replace();</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="aset/js/script.js"></script>
   </body>
